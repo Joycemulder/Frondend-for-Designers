@@ -91,133 +91,131 @@ var filmtitle = function (jsonObj) {
 
             //click event//
             infobutton.addEventListener("click", function () {
-                    console.log("click");
-                    this.info.classList.toggle('active');
+                        console.log("click");
+                        this.info.classList.toggle('active');
 
-                    //wat is de tekst van de buren als er wordt geklikt? even console loggen ... 
-                    //gebruik 'this' om te verwijzen naar 
-                    console.log("wat is de button tekst nu?", this.innerHTML);
+                        //wat is de tekst van de buren als er wordt geklikt? even console loggen ... 
+                        //gebruik 'this' om te verwijzen naar 
+                        console.log("wat is de button tekst nu?", this.innerHTML);
 
-                    //als de tekst 'meer info' is dan veranderen in 'close', en andersom ...
-                    //deze if/else had je eerst hierboven staan bij het aanmaken van de button.
-                    if (this.innerHTML == "Meer info") {
-                        this.innerHTML = "Close";
-                    } else {
-                        this.innerHTML = "Meer info";
-                    }
-
-                    //esc  key//
-
-                    infobutton.addEventListener("keyup", function (event) {
-                        if (event.keyCode == 27) {
-                            alert('Esc key pressed.');
-
-                            /* by calling document.getElementsByClassName(‘class’) the return is HTMLCollection
-                            and not the actual class, you have to call it by index instead. */
-                            document.getElementsByClassName("bloktwee active")[0].style.display = "none";
-
+                        //als de tekst 'meer info' is dan veranderen in 'close', en andersom ...
+                        //deze if/else had je eerst hierboven staan bij het aanmaken van de button.
+                        if (this.innerHTML == "Meer info") {
+                            this.innerHTML = "Close";
+                        } else {
+                            this.innerHTML = "Meer info";
                         }
-                    });
 
-                }
-            }
+                        //esc  key//
 
+                        infobutton.addEventListener("keyup", function (event) {
+                            if (event.keyCode == 27) {
+                                alert('Esc key pressed.');
 
+                                /* by calling document.getElementsByClassName(‘class’) the return is HTMLCollection
+                                and not the actual class, you have to call it by index instead. */
+                                document.getElementsByClassName("bloktwee active")[0].style.display = "none";
 
-
-
-            /*
-            filmblok.classList.add("filmblok")
-            Hiermee kan je class fiksen aan je javascript
-
-
-            */
-
-
-            /*
-
-                        var filmpie = request.response[0];
-                        //en nu de json data koppelen aan html elementen
-                        //1 createElement
-                        //2 koppel json data met textContent
-                        //3 append het html element zodat het in je browser komt
-                        var blokfilm = document.createElement('div');
-                        var filmtitle = document.createElement('h1');
-                        var filmplot = document.createElement('p');
-                        var cover = document.createElement('img');
-
-                        filmtitle.textContent = filmpie.title;
-                        filmplot.textContent = filmpie.simple_plot;
-                        cover.src = filmpie.cover;
-
-                        container.appendChild(filmtitle);
-                        container.appendChild(filmplot);
-                        container.appendChild(cover);
-
-                        var filmpie = request.response[1];
-                        var filmtitle = document.createElement('h1');
-                        var filmplot = document.createElement('p');
-                        var cover = document.createElement('img');
-
-                        filmtitle.textContent = filmpie.title;
-                        filmplot.textContent = filmpie.simple_plot;
-                        cover.src = filmpie.cover;
-
-                        container.appendChild(filmtitle);
-                        container.appendChild(filmplot);
-                        container.appendChild(cover);
-
-                        var filmpie = request.response[2];
-                        var filmtitle = document.createElement('h1');
-                        var filmplot = document.createElement('p');
-                        var cover = document.createElement('img');
-
-                        filmtitle.textContent = filmpie.title;
-                        filmplot.textContent = filmpie.simple_plot;
-                        cover.src = filmpie.cover;
-
-                        container.appendChild(filmtitle);
-                        container.appendChild(filmplot);
-                        container.appendChild(cover);
-
-                        var filmpie = request.response[3];
-                        var filmtitle = document.createElement('h1');
-                        var filmplot = document.createElement('p');
-                        var cover = document.createElement('img');
-
-                        filmtitle.textContent = filmpie.title;
-                        filmplot.textContent = filmpie.simple_plot;
-                        cover.src = filmpie.cover;
-
-                        container.appendChild(filmtitle);
-                        container.appendChild(filmplot);
-                        container.appendChild(cover);
-
-                        var filmpie = request.response[4];
-                        var filmtitle = document.createElement('h1');
-                        var filmplot = document.createElement('p');
-                        var cover = document.createElement('img');
-
-                        filmtitle.textContent = filmpie.title;
-                        filmplot.textContent = filmpie.simple_plot;
-                        cover.src = filmpie.cover;
-
-                        container.appendChild(filmtitle);
-                        container.appendChild(filmplot);
-                        container.appendChild(cover);
-
-                        var filmpie = request.response[5];
-                        var filmtitle = document.createElement('h1');
-                        var filmplot = document.createElement('p');
-                        var cover = document.createElement('img');
-
-                        filmtitle.textContent = filmpie.title;
-                        filmplot.textContent = filmpie.simple_plot;
-                        cover.src = filmpie.cover;
-
-                        container.appendChild(filmtitle);
-                        container.appendChild(filmplot);
-                        container.appendChild(cover);
+                            }
+                        });
 
                     }
-            */
+
+
+
+
+                    /*
+                    filmblok.classList.add("filmblok")
+                    Hiermee kan je class fiksen aan je javascript
+
+
+                    */
+
+
+                    /*
+
+                                var filmpie = request.response[0];
+                                //en nu de json data koppelen aan html elementen
+                                //1 createElement
+                                //2 koppel json data met textContent
+                                //3 append het html element zodat het in je browser komt
+                                var blokfilm = document.createElement('div');
+                                var filmtitle = document.createElement('h1');
+                                var filmplot = document.createElement('p');
+                                var cover = document.createElement('img');
+
+                                filmtitle.textContent = filmpie.title;
+                                filmplot.textContent = filmpie.simple_plot;
+                                cover.src = filmpie.cover;
+
+                                container.appendChild(filmtitle);
+                                container.appendChild(filmplot);
+                                container.appendChild(cover);
+
+                                var filmpie = request.response[1];
+                                var filmtitle = document.createElement('h1');
+                                var filmplot = document.createElement('p');
+                                var cover = document.createElement('img');
+
+                                filmtitle.textContent = filmpie.title;
+                                filmplot.textContent = filmpie.simple_plot;
+                                cover.src = filmpie.cover;
+
+                                container.appendChild(filmtitle);
+                                container.appendChild(filmplot);
+                                container.appendChild(cover);
+
+                                var filmpie = request.response[2];
+                                var filmtitle = document.createElement('h1');
+                                var filmplot = document.createElement('p');
+                                var cover = document.createElement('img');
+
+                                filmtitle.textContent = filmpie.title;
+                                filmplot.textContent = filmpie.simple_plot;
+                                cover.src = filmpie.cover;
+
+                                container.appendChild(filmtitle);
+                                container.appendChild(filmplot);
+                                container.appendChild(cover);
+
+                                var filmpie = request.response[3];
+                                var filmtitle = document.createElement('h1');
+                                var filmplot = document.createElement('p');
+                                var cover = document.createElement('img');
+
+                                filmtitle.textContent = filmpie.title;
+                                filmplot.textContent = filmpie.simple_plot;
+                                cover.src = filmpie.cover;
+
+                                container.appendChild(filmtitle);
+                                container.appendChild(filmplot);
+                                container.appendChild(cover);
+
+                                var filmpie = request.response[4];
+                                var filmtitle = document.createElement('h1');
+                                var filmplot = document.createElement('p');
+                                var cover = document.createElement('img');
+
+                                filmtitle.textContent = filmpie.title;
+                                filmplot.textContent = filmpie.simple_plot;
+                                cover.src = filmpie.cover;
+
+                                container.appendChild(filmtitle);
+                                container.appendChild(filmplot);
+                                container.appendChild(cover);
+
+                                var filmpie = request.response[5];
+                                var filmtitle = document.createElement('h1');
+                                var filmplot = document.createElement('p');
+                                var cover = document.createElement('img');
+
+                                filmtitle.textContent = filmpie.title;
+                                filmplot.textContent = filmpie.simple_plot;
+                                cover.src = filmpie.cover;
+
+                                container.appendChild(filmtitle);
+                                container.appendChild(filmplot);
+                                container.appendChild(cover);
+
+                            }
+                    */

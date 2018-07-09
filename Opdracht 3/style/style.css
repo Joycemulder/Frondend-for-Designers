@@ -120,10 +120,7 @@ button {
     }
 }
 
-.rotate {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
+
 
 .bloktwee img {
     display: inline-block;
