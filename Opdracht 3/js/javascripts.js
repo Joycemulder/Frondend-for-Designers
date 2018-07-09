@@ -106,16 +106,14 @@ var filmtitle = function (jsonObj) {
                 this.innerHTML = "Meer info";
             }
 
-            //esc  key//
+
 
 
         });
+
+        //esc  key//
         infobutton.addEventListener("keyup", function (event) {
             if (event.keyCode == 27) {
-                alert('Esc key pressed.');
-
-                /* by calling document.getElementsByClassName(‘class’) the return is HTMLCollection
-                and not the actual class, you have to call it by index instead. */
                 document.getElementsByClassName("bloktwee active")[0].style.display = "none";
 
             }
