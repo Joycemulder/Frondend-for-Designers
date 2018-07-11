@@ -16,4 +16,4 @@ In demo 4 met een slidein animatie.
 
 Eindopdracht
 
-[Opdracht 3](opdracht3/)
+[Opdracht 3](Opdracht3/)
