@@ -14,7 +14,7 @@ In demo 4 met een slidein animatie.
 3. [Demo 3](demo3/)
 4. [Demo 4](demo4/)
 
-#Eindopdracht
+# Eindopdracht
 
 Usecase: Movie data api gebruikt om een movie lijst te maken waar de gebruiker door heen kan kijken met een klein plot maar ook groter plot met foto's van de acteurs er bij.
 
