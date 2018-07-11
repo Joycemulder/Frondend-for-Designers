@@ -16,4 +16,4 @@ In demo 4 met een slidein animatie.
 
 Eindopdracht
 
-[Opdracht 3](Opdracht 3/)
+[Opdracht 3](https://github.com/Joycemulder/Frondend-for-Designers/tree/master/Opdracht%203)
